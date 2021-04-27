@@ -1,0 +1,5 @@
+daemon=1
+paytxfee=0.002
+rpcuser=YOUR_RPC_USERNAME
+rpcpassword=YOUR_RPC_PASSWORD
+rpcport=14279
