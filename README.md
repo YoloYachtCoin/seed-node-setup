@@ -19,7 +19,7 @@ sudo apt install build-essential libgmp3-dev \
 mkdir yyccoin .yyccoin
 curl -o .yyccoin/yyccoin.conf https://raw.githubusercontent.com/yoloyachtclub/p2p-node-setup/master/yyccoin.conf
 curl -o yyccoin/yyccoind https://raw.githubusercontent.com/yoloyachtclub/p2p-node-setup/master/yyccoind
-curl -o yyccoin/yyccoin-cli https://raw.githubusercontent.com/yoloyachtclub/p2p-node-pool-setup/master/yyccoin-cli
+curl -o yyccoin/yyccoin-cli https://raw.githubusercontent.com/yoloyachtclub/p2p-node-setup/master/yyccoin-cli
 chmod 755 yyccoin/*
 ```
 
@@ -27,4 +27,14 @@ chmod 755 yyccoin/*
 ```bash
 change line #3 YOUR_RPC_USERNAME to any username you choose
 change line #4 YOUR_RPC_PASSWORD to any password you choose
+```
+
+### Running the node
+```bash
+./yyccoin/yyccoind
+```
+
+### Viewing logs
+```bash
+tail -f .yyccoin/debug.log
 ```
